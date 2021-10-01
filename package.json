@@ -1,6 +1,6 @@
 {
     "name": "hecelejs",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Turkish Syllabification library",
     "main": "index.js",
     "scripts": {
