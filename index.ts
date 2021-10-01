@@ -52,7 +52,7 @@ const _hecele = (_word: string) => {
   var token: string = "";
   const word: string[] = toTurkishLowerCase(_word).split("");
   word.map((letter) => {
-    if (vowels.includes(letter)) {
+    if (vowels.indexOf(letter) !== -1) {
       token += 1;
     } else {
       token += 0;
@@ -65,7 +65,7 @@ const _hecele = (_word: string) => {
   }
 
   const spellCount = token.split("").filter((c) => c == "1").length;
-  if ([0, 1].includes(spellCount)) {
+  if ([0, 1].indexOf(spellCount) !== -1) {
     return [_word];
   }
 
