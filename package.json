@@ -8,7 +8,10 @@
         "build:test": "jest",
         "build": "npm run build:lib && npm run build:test && npm run build:babel",
         "build:lib": "tsc index.ts",
-        "build:babel": "babel index.js -d lib"
+        "build:babel": "babel index.js -d lib",
+        "postinstall": "npm run build",
+        "prepublish": "npm run build",
+        "preversion": "npm run build"
     },
     "repository": {
         "type": "git",

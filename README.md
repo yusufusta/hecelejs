@@ -1,4 +1,4 @@
-# HeceleJS
+# HeceleJS
 
 Bu kütüphane ile Türkçe kelimeleri heceleyebilirsiniz.
 
